@@ -1,7 +1,8 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-  {"BAT  ", "cat /sys/class/power_supply/BAT0/capacity", 60, 0},
+  
+  {"BAT  ", "echo $(cat /sys/class/power_supply/BAT0/capacity)%", 60, 0},
 	{" ", "date '+%b %d (%a) %H:%M' ",					20,		0},
 };
 
