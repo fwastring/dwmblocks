@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
   
-  {"BAT  ", "echo $(cat /sys/class/power_supply/BAT0/capacity)%", 60, 0},
+  {" ", "echo $(cat /sys/class/power_supply/BAT0/capacity)%", 60, 0},
 	{" ", "date '+%b %d (%a) %H:%M' ",					20,		0},
 };
 
