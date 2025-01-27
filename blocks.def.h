@@ -2,6 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
   
+  {" ", "echo $(acpi | awk -F ', ' '{print $2}')", 60, 0},
 	{" ", "date '+%b %d (%a) %H:%M' ",					20,		0},
 };
 
